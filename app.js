@@ -30,6 +30,30 @@ app.get('/show', (req, res) => {
 app.get('/service', (req, res) =>{
     res.render('service');
 })
+app.get('/show1', (req, res) =>{
+  res.render('show1');
+})
+app.get('/show2', (req, res) =>{
+  res.render('show2');
+})
+app.get('/show2', (req, res) =>{
+  res.render('show2');
+})
+app.get('/show3', (req, res) =>{
+  res.render('show3');
+})
+app.get('/show4', (req, res) =>{
+  res.render('show4');
+})
+app.get('/show5', (req, res) =>{
+  res.render('show5');
+})
+app.get('/show6', (req, res) =>{
+  res.render('show6');
+})
+app.get('/show7', (req, res) =>{
+  res.render('show7');
+})
 app.listen(3000, () => {
 	console.log("Server is running on http://localhost:3000");
 });
