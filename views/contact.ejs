@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bansal & Agrawal Chartered Accountants</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#205b84',
+                        },
+                        secondary: {
+                            500: '#22c55e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+   
+<body>
+
+  <div id="header"></div>
+  <%- include('header') %>
+
+  <section class="contact-section">
+    <h2><span class="highlight">|</span> CONTACT US</h2>
+    <div class="contact-container">
+
+      <!-- Left: Address Info -->
+      <div class="contact-info">
+        <div>
+          <h3>Head Office</h3>
+          <p><span class="icon">📍</span> B-14 Ratlam Kothi, Kanchan Bagh Main Road, INDORE – 452001 (M.P.)</p>
+          <p><span class="icon">📞</span> 0731 – 2514448, 2527716</p>
+          <p><span class="icon">✉️</span> mail@fngca.com</p>
+        </div>
+
+        <div>
+          <h3>Mumbai Office</h3>
+          <p><span class="icon">📍</span> 204, Royal Plaza, New Link Road, Andheri (W), Mumbai - 400053</p>
+          <p><span class="icon">📞</span> 022-26334001/002</p>
+          <p><span class="icon">✉️</span> mail@fngca.com</p>
+        </div>
+
+        <div>
+          <h3>Bhopal Office</h3>
+          <p><span class="icon">📍</span> 26 Lajpat Nagar, Behind Surjeet Bajaj, Bhopal</p>
+          <p><span class="icon">📞</span> 0731 – 2514448, 2527716</p>
+          <p><span class="icon">✉️</span> mail@fngca.com</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form">
+        <h3>Let's Get In Touch</h3>
+        <form>
+          <div class="form-row">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Mobile">
+            <input type="text" placeholder="Subject">
+          </div>
+          <textarea placeholder="Issue" required></textarea>
+          <div class="captcha-box">
+            <!-- Fake placeholder for reCAPTCHA -->
+            <p style="color: red;">ERROR for site owner: Invalid site key</p>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Maps -->
+    <div class="map-section">
+      <iframe src="https://www.google.com/maps/embed?...1" width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?...2" width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <%- include('footer') %>
+
+  <script src="js/include.js"></script>
+</body>
+</html>
+
+
+
+<!-- contact us ppge  -->
