@@ -508,7 +508,7 @@ body {
   }
   
   button {
-    background-color: #79c94b;
+    background-color:#3c79ab;
     color: white;
     padding: 10px;
     font-weight: bold;
@@ -519,7 +519,7 @@ body {
   }
   
   button:hover {
-    background-color: #66b33f;
+    background-color: #3c79ab;
   }
   
   .map-section {
@@ -587,23 +587,21 @@ body {
   
   .center {
     text-align: center;
+    margin-top: 30px;
+    background-color: #3c79ab;
+    border-radius: 20px;
   }
   
   button {
-    background-color: #81c341;
-    color: white;
+    color: #3c79ab;
     padding: 10px 40px;
     border: none;
     border-radius: 20px;
     font-size: 1rem;
     cursor: pointer;
     margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #6db634;
-  }
-  
+    padding: 80px, 40px;
+  } 
   .policy {
     font-size: 0.9rem;
     margin-top: 30px;
