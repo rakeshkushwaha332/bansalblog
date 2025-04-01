@@ -30,6 +30,9 @@
   <%- include('header') %>
 
  <!-- Hero Section -->
+
+
+ <!-- Hero Section -->
 <!-- Hero Section -->
 <section 
   x-data="{ current: 0, images: ['/images/index/heroimg2.jpg', '/images/index/heroim.jpg'] }" 
@@ -52,29 +55,8 @@
 
   <!-- Overlay -->
   <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
-<!-- Hero Section -->
-<section 
-  x-data="{ current: 0, images: ['/images/index/heroimg2.jpg', '/images/index/heroim.jpg'] }" 
-  x-init="setInterval(() => current = (current + 1) % images.length, 5000)" 
-  class="relative flex flex-col items-center justify-center text-center h-[500px] px-4 overflow-hidden" 
-  style="background-color: #032d42;"
->
-  <!-- Sliding Background Image -->
-  <template x-for="(img, index) in images" :key="index">
-    <div 
-      x-show="current === index" 
-      x-transition:enter="transition-opacity duration-1000" 
-      x-transition:enter-start="opacity-0" 
-      x-transition:enter-end="opacity-100"
-      class="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
-      :style="`background-image: url(${img})`"
-    ></div>
-  </template>
 
-  <!-- Overlay -->
-  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
-
-  <!-- Arrows (Resolved version using Alpine.js) -->
+  <!-- Arrows -->
   <button 
     @click="current = (current - 1 + images.length) % images.length"
     class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-500/60 text-white w-10 h-10 rounded-full z-20"
@@ -83,19 +65,6 @@
     @click="current = (current + 1) % images.length"
     class="absolute right-6 top-1/2 transform -translate-y-1/2 bg-gray-500/60 text-white w-10 h-10 rounded-full z-20"
   >&gt;</button>
-
-  <!-- Hero Content -->
-  <div class="relative z-20 text-white">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4">INTEGRITY – QUALITY – ASSURANCE – TRUST</h1>
-    <p class="max-w-xl mb-6 text-sm md:text-base">
-      Take your business to the next level with the help of our experienced and educationally qualified team members.
-    </p>
-    <a href="#" class="inline-block px-6 py-2 bg-[#2D6B91] hover:bg-[#3c7ca5] text-white text-sm font-medium">
-      READ MORE
-    </a>
-  </div>
-</section>
-
 
   <!-- Content -->
   <div class="relative z-20 text-white">
@@ -120,6 +89,7 @@
   </div>
 </section>
 
+  <!-- hero sectiomn  -->
   <!-- hero sectiomn  -->
   <div class="grid grid-cols-1 md:grid-cols-2">
     <!-- Subsidies and Finance -->
@@ -412,135 +382,180 @@
     </div>
   </section>
 </div>
-      <!-- founder section  -->
-      <section class="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
     
-        <!-- Text Content -->
-        <div class="lg:w-2/3">
-          <h2 class="text-2xl md:text-3xl font-bold text-[#16597D] mb-4">
-            <span class="border-b-4 border-[#16597D] pb-1">CA. ANURAG BANSAL : FOUNDER</span>
-          </h2>
-          <p class="text-gray-800 mb-4">
-            Bansal & Agrawal, Chartered Accountants was established in the year 2002. We have rich experience in the field of Central and State Government Subsidy Schemes, Income Tax, Audit, Accounting, Finance and other Regulatory Services.
-          </p>
-          <p class="text-gray-800 mb-4">
-            Being led by professional staff, the firm is able to offer a wide bouquet of services through the resources.
-          </p>
-          <p class="text-gray-800 mb-4">
-            Once on board, our endeavor is to understand the subject matter completely. Our responsiveness and eye for detail will not disappoint you. You can be assured about our domain knowledge as our National and international network provides us with leading industry practices. Your business problem will always find a custom made solution at our firm.
-          </p>
-          <p class="text-gray-800">
-            Every client is important. Bansal & Agrawal is committed to be independent, as it helps us to service our clients' needs in the most effective manner.
-          </p>
-        </div>
-    
-        <!-- Image -->
-        <div class="lg:w-1/3">
-          <div class="border-4 border-[#16597D] rounded-2xl overflow-hidden max-w-sm mx-auto">
-            <img src="/images/index/ANURAG BANSAL.png" alt="Founder Image" class="w-full h-auto object-cover">
-
-          </div>
-        </div>
-      </section>
-
-      <!-- our Teams  -->
       
-      <div class=" " style="background-color: #021C29;">
-      <!-- Include Swiper CSS -->
-<!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Founder Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
+  <!-- Text Content -->
+  <div class="lg:w-2/3">
+    <h2 class="text-2xl md:text-3xl font-bold text-[#16597D] mb-4">
+      <span class="border-b-4 border-[#16597D] pb-1">CA. ANURAG BANSAL : FOUNDER</span>
+    </h2>
+    <p class="text-gray-800 mb-4">
+      Bansal & Agrawal, Chartered Accountants was established in the year 2002. We have rich experience in the field of Central and State Government Subsidy Schemes, Income Tax, Audit, Accounting, Finance and other Regulatory Services.
+    </p>
+    <p class="text-gray-800 mb-4">
+      Being led by professional staff, the firm is able to offer a wide bouquet of services through the resources.
+    </p>
+    <p class="text-gray-800 mb-4">
+      Once on board, our endeavor is to understand the subject matter completely. Our responsiveness and eye for detail will not disappoint you. You can be assured about our domain knowledge as our National and international network provides us with leading industry practices. Your business problem will always find a custom made solution at our firm.
+    </p>
+    <p class="text-gray-800">
+      Every client is important. Bansal & Agrawal is committed to be independent, as it helps us to service our clients' needs in the most effective manner.
+    </p>
+  </div>
 
-<section class="py-16 px-4">
-  <!-- Heading -->
-  <h2 class="text-3xl font-bold text-center mb-16">
-    <span class="text-white border-b-4 border-[#1C75A1] pb-1">OUR</span>
-    <span class="text-[#1C75A1]">TEAM</span>
-  </h2>
-
-  <!-- Swiper Slider -->
-  <div class="swiper mySwiper max-w-7xl mx-auto">
-    <div class="swiper-wrapper">
-      <!-- Team Member 1 -->
-      <div class="swiper-slide">
-        <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center -mt-16 mb-4">
-            <img src="/images/index/Photo of Rishab.png" alt="Rishabh Shriwas"
-                 class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
-          </div>
-          <h3 class="font-bold text-lg">RISHABH SHRIWAS</h3>
-          <p class="text-sm">Admin</p>
-          <hr class="my-2 w-10 mx-auto border-[#1C75A1]" />
-        </div>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="swiper-slide">
-        <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center -mt-16 mb-4">
-            <img src="/images/index/Photo of amit bansal.png" alt="CA. Amit Bansal"
-                 class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
-          </div>
-          <h3 class="font-bold text-lg">CA. AMIT BANSAL</h3>
-          <p class="text-sm">Manager</p>
-          <p class="text-xs text-[#1C75A1]">Subsidy & Finance</p>
-        </div>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="swiper-slide">
-        <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center -mt-16 mb-4">
-            <img src="/images/index/Photo of CA Arjun dabi.png" alt="CA. Arjun Dabi"
-                 class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
-          </div>
-          <h3 class="font-bold text-lg">CA. ARJUN DABI</h3>
-          <p class="text-sm">Manager</p>
-          <p class="text-xs text-[#1C75A1]">Subsidy & Finance</p>
-        </div>
-      </div>
-
-      <!-- Team Member 4 -->
-      <div class="swiper-slide">
-        <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center -mt-16 mb-4">
-            <img src="/images/index/Photo of Sunil agrawal.png" alt="Sunil Agrawal"
-                 class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
-          </div>
-          <h3 class="font-bold text-lg">SUNIL AGRAWAL</h3>
-          <p class="text-sm">Manager</p>
-          <p class="text-xs text-[#1C75A1]">Taxation</p>
-        </div>
-      </div>
+  <!-- Image -->
+  <div class="lg:w-1/3">
+    <div class="border-4 border-[#16597D] rounded-2xl overflow-hidden max-w-sm mx-auto">
+      <img src="/images/index/ANURAG BANSAL.png" alt="Founder Image" class="w-full h-auto object-cover">
     </div>
-
-    <!-- Navigation Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
 </section>
 
-<!-- Include Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1, // Show 1 at a time by default
-    spaceBetween: 20,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      640: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-  });
-</script>
+<!-- Team Section -->
+<div class="bg-[#021C29]">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <section class="py-16 px-4">
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold text-center mb-16">
+      <span class="text-white border-b-4 border-[#1C75A1] pb-1">OUR</span>
+      <span class="text-[#1C75A1]"> TEAM</span>
+    </h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper max-w-7xl mx-auto">
+      <div class="swiper-wrapper">
+
+        <!-- Team Member Template -->
+        <!-- Repeat this block for each member -->
+
+        <!-- RISHABH SHRIWAS -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Photo of Rishab.png" alt="Rishabh Shriwas" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">RISHABH SHRIWAS</h3>
+            <p class="text-sm">Admin</p>
+            <hr class="my-2 w-10 mx-auto border-[#1C75A1]" />
+          </div>
+        </div>
+
+        <!-- CA. AMIT BANSAL -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Photo of amit bansal.png" alt="CA. Amit Bansal" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">CA. AMIT BANSAL</h3>
+            <p class="text-sm">Manager</p>
+            <p class="text-xs text-[#1C75A1]">Subsidy & Finance</p>
+          </div>
+        </div>
+
+        <!-- CA. ARJUN DABI -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Photo of CA Arjun dabi.png" alt="CA. Arjun Dabi" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">CA. ARJUN DABI</h3>
+            <p class="text-sm">Manager</p>
+            <p class="text-xs text-[#1C75A1]">Subsidy & Finance</p>
+          </div>
+        </div>
+
+        <!-- SUNIL AGRAWAL -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Photo of Sunil agrawal.png" alt="Sunil Agrawal" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">SUNIL AGRAWAL</h3>
+            <p class="text-sm">Manager</p>
+            <p class="text-xs text-[#1C75A1]">Taxation</p>
+          </div>
+        </div>
+
+        <!-- DEEPAK SONI -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Photo of Deepak Soni.png" alt="Deepak Soni" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">DEEPAK SONI</h3>
+            <p class="text-sm">Executive</p>
+            <p class="text-xs text-[#1C75A1]">Finance & Taxation</p>
+          </div>
+        </div>
+
+        <!-- SHIVAM SOLANKI -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Shivam Solanki.png" alt="Shivam Solanki" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">SHIVAM SOLANKI</h3>
+            <p class="text-sm">Executive</p>
+            <p class="text-xs text-[#1C75A1]">Finance & Taxation</p>
+          </div>
+        </div>
+
+        <!-- MONIKA RATHORE -->
+        <div class="swiper-slide overflow-visible">
+          <div class="bg-white text-center text-[#03202C] p-6 pt-20 rounded-lg shadow-lg relative">
+            <div class="flex justify-center -mt-16 mb-4">
+              <div class="bg-white w-28 h-28 rounded-full border-4 border-[#1C75A1] shadow-md flex items-center justify-center">
+                <img src="/images/index/Photo of monika.png" alt="Monika Rathore" class="w-24 h-24 rounded-full object-cover" />
+              </div>
+            </div>
+            <h3 class="font-bold text-lg mt-12">MONIKA RATHORE</h3>
+            <p class="text-xs text-[#1C75A1]">Accounts Head</p>
+          </div>
+        </div>
 
       </div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  </script>
+</div>
 
 
       <!-- map and contact form -->
