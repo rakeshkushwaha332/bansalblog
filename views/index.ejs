@@ -25,64 +25,409 @@
 </head>
 <body class="bg-gray-50 min-h-screen">
   <%- include('header') %>
+
+ <!-- Hero Section -->
+
+ <section class="relative flex flex-col items-center justify-center text-center h-[500px] px-4" style="background-color: #032d42;>
+  <!-- Arrows -->
+  <button class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-500/60 text-white w-12 h-12 rounded-full text-xl">&lt;</button>
+  <button class="absolute right-6 top-1/2 transform -translate-y-1/2 bg-gray-500/60 text-white w-12 h-12 rounded-full text-xl">&gt;</button>
+
+  <!-- Content -->
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-400 mb-6">INTEGRITY – QUALITY – ASSURANCE – TRUST</h1>
+  <p class="max-w-xl mb-8 text-sm md:text-base text-gray-200">
+    Take your business to the next level with the help of our experienced and educationally qualified team members
+  </p>
+  
+  <!-- Read More Button -->
+  <a href="#" class="relative inline-block px-6 py-2 bg-[#2D6B91] hover:bg-[#3c7ca5] text-white text-sm font-medium">
+    READ MORE
+  </a>
+
+  <!-- Dots -->
+  <div class="flex space-x-2 mt-8">
+    <div class="w-3 h-3 rounded-full border border-white"></div>
+    <div class="w-3 h-3 rounded-full bg-white"></div>
+    <div class="w-3 h-3 rounded-full border border-white"></div>
+  </div>
+</section>
+  <!-- hero sectiomn  -->
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <!-- Subsidies and Finance -->
+    <div class="bg-gray-100 flex flex-col items-center justify-center p-10 text-center">
+      <div class="text-4xl mb-4">⭐</div>
+      <h3 class="text-xl font-bold mb-2">SUBSIDIES AND FINANCE</h3>
+      <p class="max-w-md">
+        We are successfully rendering services to entrepreneurs regarding subsidy schemes, various Govt. grants and project financing since last two decades.
+      </p>
+    </div>
+
+    <!-- Taxation -->
+    <div class="bg-gray-100 flex flex-col items-center justify-center p-10 text-center">
+      <div class="text-4xl mb-4">₹</div>
+      <h3 class="text-xl font-bold mb-2">TAXATION</h3>
+      <p class="max-w-md">
+        IT assessment(s), Appeals & Regular Income Tax matters & GST Matters.
+      </p>
+    </div>
+
+    <!-- Auditing and Assurance -->
+    <div class="bg-[#00293C] text-white flex flex-col items-center justify-center p-10 text-center">
+      <div class="text-4xl mb-4">💰</div>
+      <h3 class="text-xl font-bold mb-2">AUDITING AND ASSURANCE</h3>
+      <p class="max-w-md">
+        Auditing services assist Corporate and Non Corporate with constructing compliant financial statements and communication with banks, investors/shareholders, and other financial partners that their finances are in order.
+      </p>
+    </div>
+
+    <!-- Certification -->
+    <div class="bg-[#00354A] text-white flex flex-col items-center justify-center p-10 text-center">
+      <div class="text-4xl mb-4">📄</div>
+      <h3 class="text-xl font-bold mb-2">CERTIFICATION</h3>
+      <p class="max-w-md">
+        Various applications/ documents being submitted to the government and other various authorities/ stakeholders often require certification by Chartered accountants.
+      </p>
+    </div>
+  </div>
+
     <!-- OUR SERVICES-->
-     <div>
-    <section class="services-section">
-        <h2>OUR <span class="highlight">SERVICES</span></h2>
-        <div class="services-grid">
-          
-            <div class="card">
-                <div class="card-image" style="background-image: url('subsidy.jpg');"></div>
-                <div class="card-content">
-                  <h3>Subsidy, Concessions and Incentives</h3>
-                  <button>Read More</button>
-                  <p>We have emerged as the prominent service provider CA Firm for getting the best deals in subsidies and Finance for agro and foo...</p>
-                </div>
+    
+  <!-- OUR SERVICES SECTION -->
+  <section class="max-w-7xl mx-auto py-16 px-4">
+    <!-- Section Title -->
+    <h2 class="text-3xl font-bold text-center mb-12">
+      <span class="text-[#16597D]">OUR</span> SERVICES
+    </h2>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/subsidy.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Subsidy, Concessions and Incentives from State as well as Central Government
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            We have emerged as the prominent service provider CA Firm for getting the best deals in subsidies and Finance for agro and foo...
+          </p>
+          <a href="/show1.ejs" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white shadow">
+        <img src="https://via.placeholder.com/400x200?text=Finance" alt="Finance Services" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">FINANCE SERVICES</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Finance advisory for businesses, tailored for growth, expansion, and regulatory compliance with expert support.
+          </p>
+          <a href="/show2" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/taxation.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            TAXATION
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            TAXATION : DIRECT & INDIRECT - Direct tax and Indirect Tax consultancy together with innovative tax efficient strategies, pro...
+          </p>
+          <a href="/show3" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/AUDIT.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            INDEPENDENT AUDITING AND ASSURANCE
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Internal Audit Services of Corporate and Non-Corporate entitiesConcurrent/Branch A...
+          </p>
+          <a href="/show4" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/start.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+           BUSINESS START UP SERVICES
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Business can be setup in India in three types like Formation of liaison office, Formation of Project office and Formation of Br...
+          </p>
+          <a href="/show5" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white shadow">
+        <img src="https://via.placeholder.com/400x200?text=Subsidy" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Management Consultancy Services
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+           DATA NOT FOUND
+          </p>
+          <a href="/show6" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/other.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Other Services
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Other Services Maintenance of statutory records under Various lawsDesigning and implementing accounting system and internal...
+          </p>
+          <a href="/show7" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+
+    </div>
+  </section>
+
+
+  <!-- FEATURED WORK SECTION -->
+  <div class="bg-white">
+  <section class="max-w-7xl mx-auto px-4 py-16 bg-white">
+    <!-- Title -->
+    <h2 class="text-3xl font-bold text-center mb-12">
+      FEATURED <span class="text-[#1C75A1]">WORK</span>
+    </h2>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/subsidy.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Subsidy, Concessions and Incentives from State as well as Central Government
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            We have emerged as the prominent service provider CA Firm for getting the best deals in subsidies and...
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white shadow flex flex-col justify-between">
+        <div class="h-48 bg-gray-100 flex items-center justify-center text-gray-400 text-xl font-bold">
+          Image Missing
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">FINANCE SERVICES</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Financial planning, compliance, and strategic business growth through personalized finance management.
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/taxation.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            TAXATION
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            TAXATION : DIRECT & INDIRECT - Direct tax and Indirect Tax consultancy together with innovative tax efficient strategies, provided...
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/AUDIT.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            INDEPENDENT AUDITING AND ASSURANCE
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            INDEPENDENT AUDITING AND ASSURANCE : Internal Audit Services of Corporate and Non-Corporate...
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/start.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Business Start Up Services
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Business can be setup in India in three types like Formation of liaison office, Formation of Project office and Formation of Branch...
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-white shadow">
+        <img src="not found " alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Management Consultancy Services
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+           not avilabe
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="bg-white shadow">
+        <img src="/images/index/other.jpg" alt="Subsidy" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">
+            Other Services
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Other Services Maintenance of statutory records under Various lawsDesigning and implementing accounting system and internal...
+          </p>
+          <a href="#" class="inline-block border-2 border-[#1C75A1] text-[#1C75A1] px-4 py-1 text-sm font-semibold hover:bg-[#1C75A1] hover:text-white transition">
+            READ MORE
+          </a>
+        </div>
+      </div>
+     
+
+      <!-- Add more cards as needed -->
+
+    </div>
+  </section>
+</div>
+      <!-- founder section  -->
+      <section class="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
+    
+        <!-- Text Content -->
+        <div class="lg:w-2/3">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#16597D] mb-4">
+            <span class="border-b-4 border-[#16597D] pb-1">CA. ANURAG BANSAL : FOUNDER</span>
+          </h2>
+          <p class="text-gray-800 mb-4">
+            Bansal & Agrawal, Chartered Accountants was established in the year 2002. We have rich experience in the field of Central and State Government Subsidy Schemes, Income Tax, Audit, Accounting, Finance and other Regulatory Services.
+          </p>
+          <p class="text-gray-800 mb-4">
+            Being led by professional staff, the firm is able to offer a wide bouquet of services through the resources.
+          </p>
+          <p class="text-gray-800 mb-4">
+            Once on board, our endeavor is to understand the subject matter completely. Our responsiveness and eye for detail will not disappoint you. You can be assured about our domain knowledge as our National and international network provides us with leading industry practices. Your business problem will always find a custom made solution at our firm.
+          </p>
+          <p class="text-gray-800">
+            Every client is important. Bansal & Agrawal is committed to be independent, as it helps us to service our clients' needs in the most effective manner.
+          </p>
+        </div>
+    
+        <!-- Image -->
+        <div class="lg:w-1/3">
+          <div class="border-4 border-[#16597D] rounded-2xl overflow-hidden max-w-sm mx-auto">
+            <img src="/images/index/ANURAG BANSAL.png" alt="Founder Image" class="w-full h-auto object-cover">
+
+          </div>
+        </div>
+      </section>
+
+      <!-- our Teams  -->
+      
+<div class=" " style="background-color: #021C29;">
+      <section class="py-16 px-4">
+        <!-- Heading -->
+        <h2 class="text-3xl font-bold text-center mb-16">
+          <span class="text-white border-b-4 border-[#1C75A1] pb-1">OUR</span> <span class="text-[#1C75A1]">TEAM</span>
+        </h2>
+    
+        <!-- Team Grid -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+    
+          <!-- Team Member -->
+          <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
+            <div class="flex justify-center -mt-16 mb-4">
+              <img src="/images/index/Photo of Rishab.png" alt="Rishabh Shriwas"
+                   class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
+            </div>
+            <h3 class="font-bold text-lg">RISHABH SHRIWAS</h3>
+            <p class="text-sm">Admin</p>
+            <hr class="my-2 w-10 mx-auto border-[#1C75A1]" />
           </div>
     
-          <div class="card">
-            <div class="card-image" style="background-image: url('finance.jpg');"></div>
-            <div class="card-content">
-              <h3>Finance Services</h3>
-              <button>Read More</button>
-              <p>Description text for finance services goes here...</p>
+          <!-- Team Member -->
+          <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
+            <div class="flex justify-center -mt-16 mb-4">
+              <img src="/images/index/Photo of amit bansal.png" alt="CA. Amit Bansal"
+                   class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
             </div>
+            <h3 class="font-bold text-lg">CA. AMIT BANSAL</h3>
+            <p class="text-sm">Manager</p>
+            <p class="text-xs text-[#1C75A1]">Subsidy & Finance</p>
           </div>
     
-          <div class="card">
-            <div class="card-image" style="background-image: url('tax.jpg');"></div>
-            <div class="card-content">
-              <h3>Taxation</h3>
-              <button>Read More</button>
-              <p>Tax consultancy together with innovative tax efficient strategies, pro...</p>
+          <!-- Team Member -->
+          <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
+            <div class="flex justify-center -mt-16 mb-4">
+              <img src="/images/index/Photo of CA Arjun dabi.png" alt="CA. Arjun Dabi"
+                   class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
             </div>
+            <h3 class="font-bold text-lg">CA. ARJUN DABI</h3>
+            <p class="text-sm">Manager</p>
+            <p class="text-xs text-[#1C75A1]">Subsidy & Finance</p>
           </div>
     
-          <div class="card">
-            <div class="card-image" style="background-image: url('audit.jpg');"></div>
-            <div class="card-content">
-              <h3>Independent Auditing and Assurance</h3>
-              <button>Read More</button>
-              <p>Internal Audit Services of Corporate and Non-Corporate entities...</p>
+          <!-- Team Member -->
+          <div class="bg-white text-center text-[#03202C] p-6 rounded-lg shadow-lg">
+            <div class="flex justify-center -mt-16 mb-4">
+              <img src="/images/index/Photo of Sunil agrawal.png" alt="Sunil Agrawal"
+                   class="rounded-full border-4 border-[#1C75A1] w-28 h-28 object-cover" />
             </div>
-          </div>
-    
-          <div class="card">
-            <div class="card-image" style="background-image: url('startup.jpg');"></div>
-            <div class="card-content">
-              <h3>Business Start Up Services</h3>
-              <button>Read More</button>
-              <p>Business setup in India like liaison office, Project office, Branch office...</p>
-            </div>
-          </div>
-    
-          <div class="card">
-            <div class="card-image" style="background-image: url('consultancy.jpg');"></div>
-            <div class="card-content">
-              <h3>Management Consultancy Services</h3>
-              <button>Read More</button>
-              <p>Function close() { document.getElementById("close").style.display = "none"; } ...</p>
-            </div>
+            <h3 class="font-bold text-lg">SUNIL AGRAWAL</h3>
+            <p class="text-sm">Manager</p>
+            <p class="text-xs text-[#1C75A1]">Taxation</p>
           </div>
     
         </div>
@@ -90,170 +435,62 @@
       </div>
 
 
-      <!-- featured work -->
-      <section class="featured-work-section">
-        <h2 class="section-title">FEATURED <span class="highlight">WORK</span></h2>
-        <div class="service-grid">
-          
-          <!-- Example Card -->
-          <div class="service-card">
-            <div class="service-image" style="background-image: url('image.png');"></div>
-            <div class="service-content">
-              <h3>Legal Support & Government Liaison</h3>
-              <p>We offer expert services to handle regulatory compliance, documentation, and government schemes for MSMEs and corporates across sectors...</p>
-              <button class="read-more-btn">READ MORE</button>
-            </div>
-          </div>
-      
-          <!-- Add more cards below as needed... -->
-            <!-- Example Card -->
-          <div class="service-card">
-            <div class="service-image" style="background-image: url('image.png');"></div>
-            <div class="service-content">
-              <h3>Legal Support & Government Liaison</h3>
-              <p>We offer expert services to handle regulatory compliance, documentation, and government schemes for MSMEs and corporates across sectors...</p>
-              <button class="read-more-btn">READ MORE</button>
-            </div>
-          </div> 
-          <!-- Example Card -->
-          <div class="service-card">
-            <div class="service-image" style="background-image: url('image.png');"></div>
-            <div class="service-content">
-              <h3>Legal Support & Government Liaison</h3>
-              <p>We offer expert services to handle regulatory compliance, documentation, and government schemes for MSMEs and corporates across sectors...</p>
-              <button class="read-more-btn">READ MORE</button>
-            </div>
-          </div> 
-          <!-- Example Card -->
-          <div class="service-card">
-            <div class="service-image" style="background-image: url('image.png');"></div>
-            <div class="service-content">
-              <h3>Legal Support & Government Liaison</h3>
-              <p>We offer expert services to handle regulatory compliance, documentation, and government schemes for MSMEs and corporates across sectors...</p>
-              <button class="read-more-btn">READ MORE</button>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-
-
-      <!-- founder section  -->
-      <section class="founder-section">
-        <div class="founder-container">
-          <div class="founder-text">
-            <h2><span class="highlight">CA. ANURAG BANSAL</span> : FOUNDER</h2>
-            <div class="underline"></div>
-            <p>
-              Bansal & Agrawal, Chartered Accountants was established in the year 2002. We have rich experience in the field of Central and State Government Subsidy Schemes, Income Tax, Audit, Accounting, Finance and other Regulatory Services.
-            </p>
-            <p>
-              Being led by professional staff, the firm is able to offer a wide bouquet of services through the resources.
-            </p>
-            <p>
-              Once on board, our endeavor is to understand the subject matter completely. Our responsiveness and eye for detail will not disappoint you. You can be assured about our domain knowledge as our National and international network provides us with leading industry practices. Your business problem will always find a custom made solution at our firm.
-            </p>
-            <p>
-              Every client is important. Bansal & Agrawal is committed to be independent, as it helps us to service our clients’ needs in the most effective manner.
-            </p>
-          </div>
-          <div class="founder-image">
-            <img src="image.png" alt="Founder Photo">
-          </div>
-        </div>
-      </section>
-      
-
-      <!-- our Teams  -->
-      
-
-      <section class="team-section mt-2 ">
-        <h2 class="team-title">OUR <span>TEAM</span></h2>
-        <div class="team-grid flex m-6">
-      
-          <!-- Team Member -->
-          <div class="team-card">
-            <div class="team-img">
-              <img src="image.png" alt="CA. Arjun Dabi">
-            </div>
-            <h3>CA. ARJUN DABI</h3>
-            <p>Manager</p>
-            <hr>
-            <p class="role">Subsidy & Finance</p>
-          </div>
-      
-          <!-- Repeat for other members -->
-          <div class="team-card">
-            <div class="team-img">
-              <img src="image.png" alt="Sunil Agrawal">
-            </div>
-            <h3>SUNIL AGRAWAL</h3>
-            <p>Manager</p>
-            <hr>
-            <p class="role">Taxation</p>
-          </div>
-      
-          <div class="team-card">
-            <div class="team-img">
-              <img src="image.png" alt="Deepak Soni">
-            </div>
-            <h3>DEEPAK SONI</h3>
-            <p>Executive</p>
-            <hr>
-            <p class="role">Finance & Taxation</p>
-          </div>
-      
-          <div class="team-card">
-            <div class="team-img">
-              <img src="image.png" alt="Shivam Solanki">
-            </div>
-            <h3>SHIVAM SOLANKI</h3>
-            <p>Executive</p>
-            <hr>
-            <p class="role">Finance & Taxation</p>
-          </div>
-      
-        </div>
-      </section>
-
-
       <!-- map and contact form -->
 
-      <section class="contact-map-section">
-        <h2 class="section-title">MAPS <span>AND CONTACT</span></h2>
-        <div class="contact-map-container">
-      
-          <!-- Google Map -->
-          <div class="map-box ">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2272819928547!2d75.86951927447276!3d22.717110279392363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd83467ad5cf%3A0x9b726cf104cd86df!2sBansal%20%26%20Agrawal%2C%20Chartered%20Accountants!5e0!3m2!1sen!2sin!4v1711918000000!5m2!1sen!2sin" 
-              width="100%" 
-              height="400" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-      
+      <section class="max-w-7xl mx-auto px-4 py-20">
+        <!-- Section Heading -->
+        <h2 class="text-3xl font-bold text-center mb-12">
+          MAPS <span class="text-[#1C75A1]">AND CONTACT</span>
+        </h2>
+    
+        <!-- Map & Form Wrapper -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white shadow-lg p-6 md:p-10 rounded-lg">
+          
+       <!-- Google Map -->
+<div class="w-full h-[500px]">
+  <iframe
+    src="https://www.google.com/maps?q=22.702938845803587,75.91365512126467&z=15&output=embed"
+    class="w-full h-full border"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+    
           <!-- Contact Form -->
-          <div class="contact-form">
-            <form action="#" method="POST">
-              <label for="name">NAME</label>
-              <input type="text" id="name" name="name" placeholder="Your Name">
-      
-              <label for="email">EMAIL *</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
-      
-              <label for="message">MESSAGE *</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-      
-              <button type="submit">SEND</button>
+          <div>
+            <form class="space-y-6">
+              <!-- Name -->
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1">NAME</label>
+                <input type="text" id="name" class="w-full border border-gray-300 rounded px-4 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#1C75A1]" />
+              </div>
+    
+              <!-- Email -->
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1">EMAIL <span class="text-red-500">*</span></label>
+                <input type="email" id="email" class="w-full border border-gray-300 rounded px-4 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#1C75A1]" required />
+              </div>
+    
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1">MESSAGE <span class="text-red-500">*</span></label>
+                <textarea id="message" rows="5" class="w-full border border-gray-300 rounded px-4 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#1C75A1]" required></textarea>
+              </div>
+    
+              <!-- Submit -->
+              <div>
+                <button type="submit" class="bg-[#1C75A1] text-white px-6 py-2 font-semibold rounded hover:bg-[#16597D] transition">
+                  SEND
+                </button>
+              </div>
             </form>
           </div>
-      
+    
         </div>
       </section>
+    
       
       
     <!-- WhatsApp Button -->

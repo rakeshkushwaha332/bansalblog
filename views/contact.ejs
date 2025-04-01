@@ -30,64 +30,67 @@
   <div id="header"></div>
   <%- include('header') %>
 
-  <section class="contact-section">
-    <h2><span class="highlight">|</span> CONTACT US</h2>
-    <div class="contact-container">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold border-l-4 border-blue-600 pl-4 mb-10">CONTACT US</h2>
 
-      <!-- Left: Address Info -->
-      <div class="contact-info">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Contact Details -->
+      <div class="space-y-10">
+        <!-- Head Office -->
+       
+        <!-- Bhopal Office -->
         <div>
-          <h3>Head Office</h3>
-          <p><span class="icon">📍</span> B-14 Ratlam Kothi, Kanchan Bagh Main Road, INDORE – 452001 (M.P.)</p>
-          <p><span class="icon">📞</span> 0731 – 2514448, 2527716</p>
-          <p><span class="icon">✉️</span> mail@fngca.com</p>
-        </div>
-
-        <div>
-          <h3>Mumbai Office</h3>
-          <p><span class="icon">📍</span> 204, Royal Plaza, New Link Road, Andheri (W), Mumbai - 400053</p>
-          <p><span class="icon">📞</span> 022-26334001/002</p>
-          <p><span class="icon">✉️</span> mail@fngca.com</p>
-        </div>
-
-        <div>
-          <h3>Bhopal Office</h3>
-          <p><span class="icon">📍</span> 26 Lajpat Nagar, Behind Surjeet Bajaj, Bhopal</p>
-          <p><span class="icon">📞</span> 0731 – 2514448, 2527716</p>
-          <p><span class="icon">✉️</span> mail@fngca.com</p>
+          <h3 class="text-xl font-semibold">Bhopal Office</h3>
+          <p>
+            G-5, Ground Floor,<br>
+            59-EB, Scheme No. 140,<br>
+            Indore – 452016 (Madhya Pradesh), India
+          </p>
+          <p>📞 +91 731 4704498, +91 9993322223</p>
+          <p>📧 <a href="mailto:canuragbansal@gmail.com" class="text-blue-600">canuragbansal@gmail.com</a></p>
         </div>
       </div>
 
-      <!-- Right: Form -->
-      <div class="contact-form">
-        <h3>Let's Get In Touch</h3>
-        <form>
-          <div class="form-row">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
+      <!-- Contact Form -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Let's Get In Touch</h3>
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" placeholder="Name" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded" required>
           </div>
-          <div class="form-row">
-            <input type="text" placeholder="Mobile">
-            <input type="text" placeholder="Subject">
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" placeholder="Mobile" class="w-full p-2 border border-gray-300 rounded">
+            <input type="text" placeholder="Subject" class="w-full p-2 border border-gray-300 rounded">
           </div>
-          <textarea placeholder="Issue" required></textarea>
-          <div class="captcha-box">
-            <!-- Fake placeholder for reCAPTCHA -->
-            <p style="color: red;">ERROR for site owner: Invalid site key</p>
+          <textarea placeholder="Issue" class="w-full p-2 border border-gray-300 rounded" rows="4"></textarea>
+
+          <!-- reCAPTCHA Error -->
+          <div class="text-sm text-red-600 border border-red-300 p-3">
+            ERROR for site owner: Invalid site key
+            <div class="mt-2 border p-2 text-center">[ reCAPTCHA Placeholder ]</div>
           </div>
-          <button type="submit">Send</button>
+
+          <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded">
+            Send
+          </button>
         </form>
       </div>
-
     </div>
 
-    <!-- Maps -->
-    <div class="map-section">
-      <iframe src="https://www.google.com/maps/embed?...1" width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
-      <iframe src="https://www.google.com/maps/embed?...2" width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
+    <!-- Google Maps -->
+    <div class="mt-12 space-y-6">
+      <iframe
+      src="https://www.google.com/maps?q=22.702938845803587,75.91365512126467&z=15&output=embed"
+      class="w-full h-[500px] border"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+    
     </div>
-  </section>
-
+  </div>
   <div id="footer"></div>
   <%- include('footer') %>
 

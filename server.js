@@ -24,7 +24,7 @@ app.get('/team', (req, res) => {
     res.render('team');
   });
 app.get('/show', (req, res) => {
-    res.render('index');
+    res.render('show');
   });
 
 app.get('/service', (req, res) =>{
